@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexbox & Grid </title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            height: 5vh;
+        }
+        .body{
+            height: 80vh;
+        }
+        .footer{
+            height: 5vh;
+        }
+        .con{
+            width: 100%;
+            border: 1px solid black;
+        }
+        .inside{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .side1, .side2{
+            width: 20%;
+        }
+        .main{
+            width: 60%;
+        }
+        .body{
+            display: flex;
+        }
+        .buttons{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Website2</h1>
+    <div class="container">
+        <div class="header con inside">header</div>    
+        <div class="body con">
+            <div class="side1 con inside">side1</div>
+            <div class="main con inside">main</div>
+            <div class="side2 con inside">side2</div>
+        </div>
+        <div class="footer con inside">footer</div>
+    </div>
+    <div class="buttons">
+        <button>Flexbox</button>
+        <button>Grid</button>
+    </div>
 </body>
 </html>
